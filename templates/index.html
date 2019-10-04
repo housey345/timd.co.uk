@@ -4,7 +4,7 @@
 		<title>Miniport by HTML5 UP</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		{% includeCssFile "assets/css/main.css" %}
+		{% do view.registerCssFile ("assets/css/main.css") %}
 	</head>
 	<body class="is-preload">
 
@@ -197,12 +197,12 @@
 				</div>
 			</article>
 
-			{% includeJsFile "assets/js/jquery.min.js" %}
-			{% includeJsFile "assets/js/jquery.scrolly.min.js" %}
-			{% includeJsFile "assets/js/browser.min.js" %}
-			{% includeJsFile "assets/js/breakpoints.min.js" %}
-			{% includeJsFile "assets/js/util.js" %}
-			{% includeJsFile "assets/js/main.js" %}
+			{% do view.registerJsFile ("assets/js/jquery.min.js") %}
+			{% do view.registerJsFile ("assets/js/jquery.scrolly.min.js") %}
+			{% do view.registerJsFile ("assets/js/browser.min.js") %}
+			{% do view.registerJsFile ("assets/js/breakpoints.min.js") %}
+			{% do view.registerJsFile ("assets/js/util.js") %}
+			{% do view.registerJsFile ("assets/js/main.js") %}
 
 	</body>
 </html>
