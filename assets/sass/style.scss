@@ -59,6 +59,10 @@ nav {
     border: 4px solid rgb(155, 155, 236);
 }
 
+.asterick {
+    font-weight: bold;
+}
+
 .back-to-top {
     position: fixed;
     bottom: 25px;
@@ -95,7 +99,6 @@ nav {
         border: 16px #292933 solid !important;
         width: 280px;
         margin-bottom: 1rem;
-        /*opacity: 0.5;*/
     }
 
 }
@@ -122,17 +125,18 @@ nav {
         }
     }
 
-    /*
     .box {
-        opacity: 0.95;
-    }*/
+        .fa-check {
+            color: darkviolet;
+        }
+    }
 
     .fab-icons {
         font-size: 1.8em;
         color: lightgray;
 
         i {
-            margin-left: 0.5rem;
+            margin: 0.8rem;
         }
     }
 }
