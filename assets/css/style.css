@@ -126,6 +126,10 @@ nav .nav-item {
   color: lightgray;
 }
 
+#work .fab-icons i {
+  margin-left: 0.5rem;
+}
+
 #portfolio {
   background-color: white;
   padding: 6rem 0 4rem 0;
@@ -162,5 +166,14 @@ footer {
 
 footer a:link {
   color: white;
+}
+
+footer .footer-icons {
+  font-size: 2em;
+  color: dimgray;
+}
+
+footer .footer-icons i {
+  margin-left: 0.5rem;
 }
 /*# sourceMappingURL=style.css.map */

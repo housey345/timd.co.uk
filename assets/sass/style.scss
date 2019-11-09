@@ -121,14 +121,18 @@ nav {
             font-weight: bold;
         }
     }
+
     /*
     .box {
         opacity: 0.95;
     }*/
 
     .fab-icons {
-        font-size:1.8em;
+        font-size: 1.8em;
         color: lightgray;
+        i {
+            margin-left: 0.5rem;
+        }
     }
 }
 
@@ -167,5 +171,14 @@ footer {
 
     a:link {
         color: white;
+    }
+
+    .footer-icons {
+        font-size: 2em;
+        color: dimgray;
+
+        i {
+            margin-left: 0.5rem;
+        }
     }
 }
