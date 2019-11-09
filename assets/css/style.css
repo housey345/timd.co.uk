@@ -78,20 +78,20 @@ nav .nav-item {
 
 .main-header h1 {
   color: white;
-  font-size: 4em;
+  font-size: 3.5em;
 }
 
 .main-header p {
   color: white;
-  font-size: 1.5em;
+  font-size: 1.3em;
 }
 
 .main-header .profile-pic {
   border-radius: 50%;
   border: 16px #292933 solid !important;
-  width: 300px;
+  width: 280px;
   margin-bottom: 1rem;
-  opacity: 0.5;
+  /*opacity: 0.5;*/
 }
 
 #work {

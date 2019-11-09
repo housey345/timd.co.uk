@@ -6,11 +6,60 @@ $(document).ready(function () {
             $('#back-to-top').fadeOut();
         }
     });
-    // scroll body to 0px on click
-   /* $('#back-to-top').click(function () {
-        $('body,html').animate({
-            scrollTop: 0
-        }, 400);
-        return false;
-    }); */
+
+    // hide our elements on page load
+    //$('#profile-pic').css('opacity', 0);
+    $('#intro').css('opacity', 0);
+    //$('#work1').css('opacity', 0);
+    //$('#work2').css('opacity', 0);
+    //$('#work3').css('opacity', 0);
+    $('#project1').css('opacity', 0);
+    $('#project2').css('opacity', 0);
+
+    $('#profile-pic').waypoint(function () {
+        $('#profile-pic').addClass('bounceInDown');
+    }, {
+        offset: '100%'
+    });
+    $('#down-arrow').waypoint(function () {
+        $('#down-arrow').addClass('bounce');
+    }, {
+        offset: '100%'
+    });
+    $('#intro').waypoint(function () {
+        $('#intro').addClass('fadeInUpBig');
+    }, {
+        offset: '100%'
+    });
+    $('#work1').waypoint(function () {
+        $('#work1').addClass('zoomInUp');
+    }, {
+        offset: '100%'
+    });
+    $('#work2').waypoint(function () {
+        $('#work2').addClass('slideInUp');
+    }, {
+        offset: '100%'
+    });
+    $('#work3').waypoint(function () {
+        $('#work3').addClass('rotateIn');
+    }, {
+        offset: '100%'
+    });
+    $('#project1').waypoint(function () {
+        $('#project1').addClass('fadeInLeft');
+    }, {
+        offset: '100%'
+    });
+    $('#project2').waypoint(function () {
+        $('#project2').addClass('fadeInRight');
+    }, {
+        offset: '100%'
+    });
+    $('#contact-form').waypoint(function () {
+        $('#contact-form').addClass('jello');
+    }, {
+        offset: '100%'
+    });    
+
 });

@@ -6,8 +6,26 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     {% do view.registerCssFile ("assets/css/style.css") %}
+    {% do view.registerCssFile ("assets/css/animate.css") %}
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="assets/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="assets/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
@@ -16,7 +34,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark text-uppercase fixed-top">
         <div class="container">
             <a class="navbar-brand" href="#"><img src="assets/images/tmd.jpg" alt="freelance web developer" border="0"
-                    class="brand-pic" /> timd.co.uk</a>
+                    class="brand-pic" /> tim d</a>
             <div class="main-nav">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
                     aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -37,12 +55,12 @@
     <header class="main-header" id="home">
         <div class="container-fluid">
             <div class="row">
-                <div class="col"><img src="assets/images/tmd.jpg" alt="freelance web developer" border="0"
-                        class="profile-pic slide-up-fade-in" />
-                    <h1 class="slide-up-fade-in"><strong>Hi,</strong>&nbsp; I'm Tim D.</h1>
-                    <p class="slide-up-fade-in">I do Web Development and Digital Marketing.</p>
+                <div class="col animated" id="profile-pic"><img src="assets/images/tmd.jpg"
+                        alt="freelance web developer" border="0" class="profile-pic" />
+                    <h1><strong>Hi,</strong>&nbsp; I'm Tim.</h1>
+                    <p>I do Web Development and Digital Marketing.</p>
                     <a href="#work" class="btn btn-secondary btn-lg slide-up-fade-in"><i
-                            class="fa fa-chevron-down"></i>&nbsp;&nbsp;Learn about what
+                            class="fa fa-chevron-down animated animated infinite" id="down-arrow"></i>&nbsp;&nbsp;Learn about what
                         I do</a>
                 </div>
             </div>
@@ -53,7 +71,7 @@
         <div class="container work">
             <div class="row">
                 <div class="col">
-                    <div class="intro-div slide-up-fade-in">
+                    <div class="intro-div animated" id="intro">
                         <h2 class="topic-header"><i class="fas fa-globe"></i> Services</h2>
                         <p>I am a web developer with over 10 years of experience. I
                             create easy to use responsive websites as well as fixing and maintaining existing websites.
@@ -61,15 +79,15 @@
                             WordPress, creating themes and plugins as well as customisations and maintenance. Other
                             skills
                             include Search Engine</a>
-                            Optimization and Digital Marketing. If you have a task or project in mind please don't hesitate to <a href="#contact"
-                                class="contact-intro-link">contact me</a>.</p>
+                            Optimization and Digital Marketing. If you have a task or project in mind please don't
+                            hesitate to <a href="#contact" class="contact-intro-link">contact me</a>.</p>
                         <hr />
                     </div>
                 </div>
             </div>
             <div class="row">
 
-                <div class="col-sm-4">
+                <div class="col-sm-4 animated" id="work1">
                     <section class="box">
 
                         <ul class="list-group">
@@ -97,7 +115,7 @@
                     </section>
                 </div>
 
-                <div class="col-sm-4">
+                <div class="col-sm-4 animated" id="work2">
                     <section class="box">
 
                         <ul class="list-group">
@@ -125,7 +143,7 @@
                     </section>
                 </div>
 
-                <div class="col-sm-4">
+                <div class="col-sm-4 animated" id="work3">
                     <section class="box">
 
                         <ul class="list-group">
@@ -164,18 +182,19 @@
     <article id="portfolio">
         <div class="container">
             <h2 class="topic-header"><i class="fas fa-folder-open"></i> Portfolio</h2>
-            <div class="row">
+            <div class="row animated" id="project1">
                 <div class="col-sm-6">
-                    <h4>PROJECT 1</h4>
                     <img src="assets/images/project1.jpg" alt="project 1" border="0" class="img-fluid" />
                 </div>
                 <div class="col-sm-6">
-                    <h4>PROJECT 1 info</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla volutpat sodales ultrices.</p>
+                    <hr />
+                    <h4>Parish Council</h4>
+                    <p>This is a website I've developed for a local parish council.</p>
+                    <p>Notes: Custom WordPress theme. HTML/CSS/JavaScript.</p>
                     <hr />
                 </div>
             </div>
-
+            {#
             <div class="row">
                 <div class="col-sm-push-6 col-sm-6 col-md-6">
                     <hr />
@@ -184,20 +203,19 @@
                     <hr />
                 </div>
                 <div class="col-sm-pull-6 col-sm-6 col-md-6">
-                    <h4>PROJECT 1</h4>
                     <img src="assets/images/project1.jpg" alt="project 1" border="0" class="img-fluid" />
                 </div>
             </div>
-
-            <div class="row">
+#}
+            <div class="row animated" id="project2">
                 <div class="col-sm-6">
-                    <h4>PROJECT 1</h4>
                     <img src="assets/images/project1.jpg" alt="project 1" border="0" class="img-fluid" />
                 </div>
                 <div class="col-sm-6">
                     <hr />
-                    <h4>PROJECT 1 info</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla volutpat sodales ultrices.</p>
+                    <h4>My Portfolio</h4>
+                    <p>Yes, this website. I'm including it here for the time being.</p>
+                    <p>Notes: Built on CraftCMS. HTML/CSS/Javascript.</p>
                     <hr />
                 </div>
             </div>
@@ -213,7 +231,7 @@
 
     <article id="contact">
         <div class="container">
-            <div class="contact-div">
+            <div class="contact-div animated" id="contact-form">
                 <h2 class="topic-header"><i class="fas fa-envelope"></i> Get in touch</h2>
 
                 <div class="row">
@@ -223,7 +241,7 @@
                         <form>
                             <div class="form-group">
                                 <label for="name"><i class="fa fa-user"></i> Name</label>
-                                <input type="email" class="form-control" id="name" placeholder="joe bloggs">
+                                <input type="text" class="form-control" id="name" placeholder="joe bloggs">
                             </div>
                             <div class="form-group">
                                 <label for="Email"><i class="fa fa-envelope"></i> Email address</label>
@@ -258,8 +276,7 @@
 
             </div>
             <div class="col text-center">
-                This website is &copy; 2019 <a href="https://timd.co.uk">timd.co.uk</a>&nbsp;<i
-                    class="fa fa-grin-wink"></i>
+                &copy; 2019 <a href="https://timd.co.uk">timd.co.uk</a>&nbsp;<i class="fa fa-grin-wink"></i>
             </div>
         </div>
     </footer>
@@ -276,6 +293,7 @@
     </script>
     {% do view.registerJsFile ("assets/js/jquery.min.js") %}
     {% do view.registerJsFile ("assets/js/waypoints.min.js") %}
+    {% do view.registerJsFile ("assets/js/inview.min.js") %}
     {% do view.registerJsFile ("assets/js/scripts.js") %}
 
 </body>
