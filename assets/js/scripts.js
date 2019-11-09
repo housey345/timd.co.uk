@@ -7,12 +7,8 @@ $(document).ready(function () {
         }
     });
 
-    // hide our elements on page load
-    //$('#profile-pic').css('opacity', 0);
+    // hide some elements on page load
     $('#intro').css('opacity', 0);
-    //$('#work1').css('opacity', 0);
-    //$('#work2').css('opacity', 0);
-    //$('#work3').css('opacity', 0);
     $('#project1').css('opacity', 0);
     $('#project2').css('opacity', 0);
 
@@ -60,6 +56,6 @@ $(document).ready(function () {
         $('#contact-form').addClass('jello');
     }, {
         offset: '100%'
-    });    
+    });
 
 });
