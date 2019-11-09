@@ -21,8 +21,8 @@ $(document).ready(function () {
     }, {
         offset: '100%'
     });
-    $('#down-arrow').waypoint(function () {
-        $('#down-arrow').addClass('bounce');
+    $('.down-icon').waypoint(function () {
+        $('.down-icon').addClass('bounce');
     }, {
         offset: '100%'
     });
