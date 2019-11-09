@@ -102,6 +102,10 @@ nav .nav-item {
   background-repeat: no-repeat;
   background-position: top center;
   text-align: center;
+  /*
+    .box {
+        opacity: 0.95;
+    }*/
 }
 
 #work .intro-div {
@@ -116,13 +120,10 @@ nav .nav-item {
 #work .intro-div .contact-intro-link {
   font-weight: bold;
 }
-/*
-#work .box {
-  opacity: 0.95;
-}
-*/
+
 #work .fab-icons {
-  font-size: 1.4em;
+  font-size: 1.8em;
+  color: thistle;
 }
 
 #portfolio {
