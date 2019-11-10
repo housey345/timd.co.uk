@@ -52,6 +52,10 @@ nav .nav-item {
   font-weight: bold;
 }
 
+.navbar-brand {
+  text-transform: capitalize;
+}
+
 .btn {
   margin-top: 1rem;
   background-color: #444477;
