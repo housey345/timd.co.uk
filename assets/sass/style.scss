@@ -85,10 +85,11 @@ nav {
 
 .back-to-top {
     position: fixed;
-    bottom: 100px;
+    bottom: 25px;
     right: 25px;
     display: none;
-    color: white;    
+    color: white;
+    z-index:1000;    
 }
 
 .topic-header {
