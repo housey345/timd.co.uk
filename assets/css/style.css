@@ -21,6 +21,14 @@ select {
   font-size: 1em;
 }
 
+a {
+  color: #444477;
+}
+
+a:hover {
+  color: #51518d;
+}
+
 nav .main-nav {
   float: right;
 }
@@ -51,7 +59,7 @@ nav .nav-item {
 }
 
 .btn .btn-icon {
-  margin-right: 1em;
+  margin-right: 0.8em;
 }
 
 .btn:hover {
@@ -124,10 +132,12 @@ nav .nav-item {
 
 #work .intro-div .contact-intro-link {
   font-weight: bold;
+  color: blueviolet;
 }
 
 #work .box .fa-check {
   color: darkviolet;
+  margin-right: 0.35em;
 }
 
 #work .fab-icons {
@@ -164,12 +174,12 @@ nav .nav-item {
   border-radius: 4px;
   padding: 1rem 1rem 2rem 1rem;
   margin-bottom: 1rem;
-  border: 4px solid #464646;
+  border: 4px solid #2a2a2a;
 }
 
 footer {
   background-color: #343A40;
-  padding: 2rem 0 2rem 0;
+  padding: 2rem 0 1rem 0;
   color: white;
 }
 
@@ -184,6 +194,10 @@ footer .footer-icons {
 
 footer .footer-icons i {
   margin-left: 0.5rem;
+}
+
+footer .footer-icons i:hover {
+  color: #51518d;
 }
 
 footer .craft-bigup {
