@@ -78,7 +78,7 @@ nav .nav-item {
 
 .back-to-top {
   position: fixed;
-  bottom: 100px;
+  bottom: 200px;
   right: 25px;
   display: none;
   color: white;
