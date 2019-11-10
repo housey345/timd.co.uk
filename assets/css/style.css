@@ -192,8 +192,8 @@ footer {
   color: white;
 }
 
-footer a:link {
-  color: white;
+footer a {
+  color: white !important;
 }
 
 footer .footer-icons {
