@@ -85,7 +85,7 @@ nav {
 
 .back-to-top {
     position: fixed;
-    bottom: 25px;
+    bottom: 100px;
     right: 25px;
     display: none;
     color: white;    
@@ -199,7 +199,6 @@ footer {
     background-color: #343A40;
     padding: 2rem 0 1rem 0;
     color: white;
-    z-index: 1000;
 
     a {
         color: white !important;
