@@ -223,7 +223,7 @@ footer {
     }
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
     .animated {
         animation: none !important;
     }
