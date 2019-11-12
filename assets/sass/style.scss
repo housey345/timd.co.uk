@@ -175,21 +175,10 @@ nav {
     img {
         margin-bottom: 1rem;
     }
-
-    p {
-        background-color: black;
-
-        .notes {
-            font-size: 0.8em;
-        }
-    }
 }
 
-#project2>div:nth-child(2)>p.notes {
-    .notes {
-        font-size: 0.8em;1
-        
-    }
+#notes {
+    font-size: 0.8em;
 }
 
 #contact {
