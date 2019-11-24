@@ -1,0 +1,58 @@
+{% macro errorList(errors) %}
+    {% if errors %}
+        <ul class="errors">
+            {% for error in errors %}
+                <li>{{ error }}</li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+{% endmacro %}
+
+{% from _self import errorList %}
+
+<article id="contact">
+    <div class="container">
+        <div class="contact-div animated" id="contact-form">
+            <h2 class="topic-header"><i class="fas fa-envelope"></i> Get in touch</h2>
+
+            <div class="row">
+
+                <div class="col-md-6 offset-md-3">
+                    
+                    <form method="post" action="" accept-charset="UTF-8">
+
+                            {{ csrfInput() }}
+                            <input type="hidden" name="action" value="contact-form/send">
+                            {{ redirectInput('?message=thankyou') }}
+
+                        <div class="form-group">
+                            <label for="fromName"><i class="fa fa-user"></i> Name</label>
+                            <input id="from-name" type="text" name="fromName" value="{{ message.fromName ?? '' }}" class="form-control" placeholder="joe bloggs">
+                            {{ message is defined and message ? errorList(message.getErrors('fromName')) }}         
+                        </div>
+                        <div class="form-group">
+                            <label for="fromEmail"><i class="fa fa-envelope"></i> Email address</label>
+                            <input id="from-email" type="email" name="fromEmail" value="{{ message.fromEmail ?? '' }}" class="form-control" placeholder="mail@example.com">
+                            {{ message is defined and message ? errorList(message.getErrors('fromEmail')) }}
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message"><i class="fa fa-comment"></i> Message</label>
+                            <textarea rows="10" class="form-control" id="message" name="message">{{ message.message ?? '' }}</textarea>
+                            {{ message is defined and message ? errorList(message.getErrors('message')) }}
+                        </div>
+                        <div class="text-center">
+                            <input type="submit" value="Submit" class="btn btn-secondary btn-block rounded-3">
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+        <div class="text-right">
+            <a id="back-to-top" href="#home" class="btn btn-light btn-lg back-to-top" role="button"><i
+                    class="fas fa-chevron-up"></i></a>
+        </div>
+    </div>
+
+</article>
