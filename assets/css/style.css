@@ -187,6 +187,14 @@ nav .nav-item {
   border: 4px solid #6767b3;
 }
 
+#contact #contact-form .error {
+  color: #6767B3;
+}
+
+#contact #contact-form .errors {
+  color: #6767B3;
+}
+
 footer {
   background-color: #343A40;
   padding: 2rem 0 1rem 0;

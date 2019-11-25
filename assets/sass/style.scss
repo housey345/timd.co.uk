@@ -194,6 +194,15 @@ nav {
         margin-bottom: 1rem;
         border: 4px solid rgb(103, 103, 179);
     }
+
+    #contact-form {
+        .error {
+            color:#6767B3;
+        }
+        .errors {
+            color:#6767B3;
+        }
+    }
 }
 
 footer {
