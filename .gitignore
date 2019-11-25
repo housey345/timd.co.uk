@@ -1,5 +1,9 @@
+/error_log
+/.env.example
+/.htaccess
 /.env
 /.idea
 /vendor
+/templates_BACKUP
 .DS_Store
 /templates/index-WITH-CRAFT-SYNTAX.html
