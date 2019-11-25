@@ -238,6 +238,11 @@ footer .footer-icons i:hover {
   color: #51518d;
 }
 
+footer .footer-icons a {
+  font-size: 2em;
+  color: dimgray;
+}
+
 footer .craft-bigup {
   color: black;
 }
