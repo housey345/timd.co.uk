@@ -188,10 +188,14 @@ nav .nav-item {
 }
 
 #contact #contact-form .error {
-  color: #6767B3;
+  color: red;
 }
 
 #contact #contact-form .errors {
+  color: red;
+}
+
+#contact #contact-form .notice {
   color: #6767B3;
 }
 
