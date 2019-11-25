@@ -1,4 +1,7 @@
 $(document).ready(function () {
+
+    $('#message-success').addClass('bounce');
+
     $(window).scroll(function () {
         if ($(this).scrollTop() > 50) {
             $('#back-to-top').fadeIn();
@@ -54,11 +57,6 @@ $(document).ready(function () {
     });
     $('#contact-form').waypoint(function () {
         $('#contact-form').addClass('jello');
-    }, {
-        offset: '100%'
-    });
-    $('.notice').waypoint(function () {
-        $('.down-icon').addClass('bounce');
     }, {
         offset: '100%'
     });
