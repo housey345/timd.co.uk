@@ -197,13 +197,22 @@ nav {
 
     #contact-form {
         .error {
-            color: red;
+            color: white;
+            font-weight: bold;
+            background:red;
+            padding:10px;
         }
         .errors {
-            color: red;
+            color: white;
+            font-weight: bold;
+            background:red;
+            padding:10px;
         }
         .notice {
             color:#6767B3;
+            font-weight: bold;
+            background:white;
+            padding:10px;
         }
     }
 }

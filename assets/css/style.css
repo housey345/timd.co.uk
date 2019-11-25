@@ -188,15 +188,24 @@ nav .nav-item {
 }
 
 #contact #contact-form .error {
-  color: red;
+  color: white;
+  font-weight: bold;
+  background: red;
+  padding: 10px;
 }
 
 #contact #contact-form .errors {
-  color: red;
+  color: white;
+  font-weight: bold;
+  background: red;
+  padding: 10px;
 }
 
 #contact #contact-form .notice {
   color: #6767B3;
+  font-weight: bold;
+  background: white;
+  padding: 10px;
 }
 
 footer {
