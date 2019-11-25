@@ -202,9 +202,9 @@ nav .nav-item {
 }
 
 #contact #contact-form .notice {
-  color: #6767B3;
+  color: white;
   font-weight: bold;
-  background: white;
+  background: #6767B3;
   padding: 10px;
 }
 
