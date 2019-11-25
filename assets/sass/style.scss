@@ -197,9 +197,12 @@ nav {
 
     #contact-form {
         .error {
-            color:#6767B3;
+            color: red;
         }
         .errors {
+            color: red;
+        }
+        .notice {
             color:#6767B3;
         }
     }
