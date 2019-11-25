@@ -196,6 +196,10 @@ nav {
     }
 
     #contact-form {
+        input#breakme {
+            display: none;
+        }
+
         .error {
             color: white;
             font-weight: bold;

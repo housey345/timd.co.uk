@@ -187,6 +187,10 @@ nav .nav-item {
   border: 4px solid #6767b3;
 }
 
+#contact #contact-form input#breakme {
+  display: none;
+}
+
 #contact #contact-form .error {
   color: white;
   font-weight: bold;
