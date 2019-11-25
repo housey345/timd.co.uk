@@ -192,6 +192,7 @@ nav .nav-item {
   font-weight: bold;
   background: red;
   padding: 10px;
+  border-radius: 4px;
 }
 
 #contact #contact-form .errors {
@@ -199,6 +200,7 @@ nav .nav-item {
   font-weight: bold;
   background: red;
   padding: 10px;
+  border-radius: 4px;
 }
 
 #contact #contact-form .notice {
@@ -206,6 +208,7 @@ nav .nav-item {
   font-weight: bold;
   background: #6767B3;
   padding: 10px;
+  border-radius: 4px;
 }
 
 footer {
