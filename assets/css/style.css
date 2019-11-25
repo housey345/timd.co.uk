@@ -234,13 +234,12 @@ footer .footer-icons i {
   margin-left: 0.5rem;
 }
 
-footer .footer-icons i:hover {
-  color: #51518d;
+footer .footer-icons i a {
+  color: dimgray !important;
 }
 
-footer .footer-icons a {
-  font-size: 2em;
-  color: dimgray;
+footer .footer-icons i:hover {
+  color: #51518d;
 }
 
 footer .craft-bigup {

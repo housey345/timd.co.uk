@@ -241,15 +241,14 @@ footer {
 
         i {
             margin-left: 0.5rem;
+
+            a {
+                color: dimgray !important;
+            }
         }
 
         i:hover {
             color: $base-color-lighter;
-        }
-
-        a {
-            font-size: 2em;
-            color: dimgray;
         }
     }
 
