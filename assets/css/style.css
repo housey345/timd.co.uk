@@ -188,7 +188,7 @@ nav .nav-item {
 }
 
 #contact #contact-form input#breakme {
-  display: none;
+  display: none !important;
 }
 
 #contact #contact-form .error {

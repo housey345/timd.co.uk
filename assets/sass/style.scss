@@ -197,7 +197,7 @@ nav {
 
     #contact-form {
         input#breakme {
-            display: none;
+            display: none !important;
         }
 
         .error {
