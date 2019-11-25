@@ -246,6 +246,11 @@ footer {
         i:hover {
             color: $base-color-lighter;
         }
+
+        a {
+            font-size: 2em;
+            color: dimgray;
+        }
     }
 
     .craft-bigup {
