@@ -57,5 +57,10 @@ $(document).ready(function () {
     }, {
         offset: '100%'
     });
+    $('.notice').waypoint(function () {
+        $('.down-icon').addClass('bounce');
+    }, {
+        offset: '100%'
+    });
 
 });
