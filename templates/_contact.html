@@ -20,7 +20,7 @@
                 <div class="col-md-6 offset-md-3">
 
                     {% if craft.app.session.hasFlash('notice') %}
-                    <p class="message notice animated infinite" id="msg-success">{{ craft.app.session.getFlash('notice') }}</p>
+                    <p class="message notice">{{ craft.app.session.getFlash('notice') }}</p>
                     {% elseif craft.app.session.hasFlash('error') %}
                     <p class="message error">{{ craft.app.session.getFlash('error') }}</p>
                     {% endif %}

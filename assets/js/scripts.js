@@ -1,7 +1,5 @@
 $(document).ready(function () {
 
-    $('#message-success').addClass('bounce');
-
     $(window).scroll(function () {
         if ($(this).scrollTop() > 50) {
             $('#back-to-top').fadeIn();
