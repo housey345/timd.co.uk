@@ -168,6 +168,11 @@ nav .nav-item {
   margin-bottom: 1rem;
 }
 
+#portfolio .notes {
+  font-size: 0.9em;
+  line-height: 1.25em;
+}
+
 #contact {
   background-color: #e0e0e0;
   padding: 6rem 0 4rem 0;
