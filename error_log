@@ -1,2 +1,0 @@
-[03-Oct-2019 23:59:24 UTC] PHP Warning:  require_once(/home4/bangsara/public_html/vendor/autoload.php): failed to open stream: No such file or directory in /home4/bangsara/public_html/timdco/index.php on line 11
-[03-Oct-2019 23:59:24 UTC] PHP Fatal error:  require_once(): Failed opening required '/home4/bangsara/public_html/vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home4/bangsara/public_html/timdco/index.php on line 11
