@@ -1,11 +1,5 @@
 <IfModule mod_rewrite.c>
     RewriteEngine On
-    RewriteBase /
-
-    # If the request is not secure
-    RewriteCond %{HTTPS} off
-    # Redirect to the secure version
-    RewriteRule (.*) https://%{HTTP_HOST}/$1 [R=301,L]
 
     # Send would-be 404 requests to Craft
     RewriteCond %{REQUEST_FILENAME} !-f

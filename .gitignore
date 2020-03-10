@@ -7,3 +7,5 @@
 /templates_BACKUP
 .DS_Store
 /templates/index-WITH-CRAFT-SYNTAX.html
+/craft
+/craft.bat
